@@ -15,5 +15,10 @@ module FredericConstruction
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # Active directly the connection into the console for look DB
+    console do
+      ActiveRecord::Base.connection
+    end
   end
 end
