@@ -1,22 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-light bg-primary mb-5">
+<nav class="navbar align-items-end navbar-expand-md navbar-light bg-transparent mb-5 fixed-top container">
     <%= link_to "#", class: "navbar-brand" do %>
-        <%= image_tag("logo.jpg", alt:"Image logo", class: "navbar-logo") %>
+    <%= image_tag("logo.jpg", alt:"Image logo", class: "navbar-logo") %>
     <% end %>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <%= link_to "Home", root_path, class: "nav-link" %>
+                <%= link_to "Home", root_path, class: "nav-link text-white" %>
             </li>
             <li class="nav-item">
-                <%= link_to "Maçonnerie", maconneries_path, class: "nav-link" %>
+                <%= link_to "Maçonnerie", maconneries_path, class: "nav-link text-white" %>
             </li>
             <li class="nav-item">
-                <%= link_to "Contact", contacts_path, class: "nav-link" %>
+                <%= link_to "Contact", contacts_path, class: "nav-link text-white" %>
             </li>
         </ul>
     </div>
