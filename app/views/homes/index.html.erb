@@ -1,17 +1,18 @@
-<%= image_tag("hero_1.jpg", alt: 'banner', style:"height: auto; width: 100%;") %>
+<div id="bg-home-top"></div>
 
-<div class="mt-5">
-    <h1>Ce que fait l'entreprise/Qui somme nous</h1>
-
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vel atque eum ex quis quidem libero dolore nisi
-    tenetur perferendis modi iure id eius, ipsum iusto aut. Eligendi, ipsam! Error!
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sit repellat unde doloribus ipsam nam quae quas,
-    repellendus nostrum odit tempore sint, rerum eos corrupti in. Earum voluptates dicta quae!
-    Deserunt aperiam eius expedita, similique est necessitatibus, sint voluptatem non dolor incidunt aut quaerat
-    pariatur, provident laudantium molestias delectus. Inventore laudantium repellat perferendis hic corrupti dolores
-    laboriosam ipsam sequi modi.
-    Quos a vitae facilis vel libero consequuntur quidem velit facere vero, rem laborum eum eius dolorem alias! Porro
-    aliquam, sequi iure modi fugit hic aliquid eligendi illum nesciunt totam est?
+<div class="container d-flex align-item-center mt-5">
+    <div class="row">
+        <div class="col">
+            <h3>Qui somme nous</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi dicta esse accusantium odit natus deserunt nemo, ipsa provident iure corporis, nam tempora fugit, praesentium reprehenderit quis at architecto amet laborum!
+            </p>
+        </div>
+        <div class="col-md">
+            <%= image_tag("builder.jpg", alt: "Ouvrier", class: "img-fluid") %>
+            <%= image_tag("builder2.jpg", alt: "Ouvrier", class: "img-fluid mt-3") %>
+        </div>
+    </div>
 </div>
 
 <%= render 'homes/comment' %>

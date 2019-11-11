@@ -1,24 +1,35 @@
-<nav class="navbar align-items-end navbar-expand-md navbar-dark bg-transparent mb-5 fixed-top container">
-    <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag("logo.jpg", alt:"Image logo", class: "navbar-logo") %>
-    <% end %>
+<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top container text-white">
+    <div class="row vw-100 ">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="col">
+            <%= link_to "#", class: "navbar-brand" do %>
+            <%= image_tag("logo.jpg", alt:"Image logo", class: "navbar-logo") %>
+            <% end %>
+        </div>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <%= link_to "Home", root_path, class: "nav-link text-white" %>
-            </li>
-            <li class="nav-item">
-                <%= link_to "Maçonnerie", maconneries_path, class: "nav-link text-white" %>
-            </li>
-            <li class="nav-item">
-                <%= link_to "Contact", contacts_path, class: "nav-link text-white" %>
-            </li>
-        </ul>
+        <div class="col d-flex flex-column align-items-end navbar-adjust-flex">
+            <div class="navbar-contact">
+                <i class="fas fa-phone-square-alt fa-3"></i>
+                <span style="color: white;">01 02 03 04 05</span>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <%= link_to "Home", root_path, class: "nav-link text-white" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to "Maçonnerie", maconneries_path, class: "nav-link text-white" %>
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to "Contact", contacts_path, class: "nav-link text-white" %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
     </div>
 </nav>

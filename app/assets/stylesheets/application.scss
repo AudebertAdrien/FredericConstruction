@@ -19,11 +19,39 @@
   height: auto;
 }
 
-.color-nav {
-  color: white;
+#bg-home-top{
+  height: 100vh;
+  background-image: url("hero_1.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
-//Section comment customer
+.navbar-contact{
+  font-size: 1.8em; color: #FFC106;
+}
+
 .comment{
-    background-color: #FFF;
+  background-color: #FFF;
+}
+
+footer{
+
+}
+
+@include media-breakpoint-down(xs){
+  .navbar-contact{
+    font-size: 1em;
+  }
+
+  #bg-home-top{
+    background-position: 87% 50%;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-adjust-flex{
+    justify-content: center;
+  }
 }
