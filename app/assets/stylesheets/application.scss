@@ -14,6 +14,10 @@
  */
 @import "bootstrap";
 
+h1, h2, h3, h4, h5, h6{
+  color: #FFC106;
+}
+
 .navbar-logo {
   width: 4em;
   height: auto;
@@ -33,10 +37,6 @@
 
 .comment{
   background-color: #FFF;
-}
-
-footer{
-
 }
 
 @include media-breakpoint-down(xs){
