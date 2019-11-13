@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6{
   height: auto;
 }
 
+.navbar-blue{
+  background-color: blue !important;
+}
+
 #bg-home-top{
   height: 100vh;
   background-image: url("hero_1.jpg");
@@ -40,6 +44,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @include media-breakpoint-down(xs){
+  .navbar{
+    background-color: blue!important;
+  }
+
+  .navbar-toggler{
+
+  }
+
   .navbar-contact{
     font-size: 1em;
   }
