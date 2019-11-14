@@ -18,14 +18,24 @@ h1, h2, h3, h4, h5, h6{
   color: #FFC106;
 }
 
+a{
+  color: #FFC106 !important;
+}
+
 .navbar-logo {
   width: 4em;
   height: auto;
 }
 
 .navbar-blue{
-  background-color: blue !important;
+  background-color: #017BFF !important;
 }
+
+.navbar-contact{
+  font-size: 1.8em; 
+  color: #FFC106;
+}
+
 
 #bg-home-top{
   height: 100vh;
@@ -35,21 +45,16 @@ h1, h2, h3, h4, h5, h6{
   background-size: cover;
 }
 
-.navbar-contact{
-  font-size: 1.8em; color: #FFC106;
-}
-
 .comment{
   background-color: #FFF;
 }
 
+
+
 @include media-breakpoint-down(xs){
   .navbar{
-    background-color: blue!important;
-  }
-
-  .navbar-toggler{
-
+    background-color: #017BFF!important;
+    padding: 0;
   }
 
   .navbar-contact{
@@ -59,11 +64,27 @@ h1, h2, h3, h4, h5, h6{
   #bg-home-top{
     background-position: 87% 50%;
   }
-
 }
 
+
 @include media-breakpoint-down(sm) {
+  .navbar{
+    padding: 0;
+  }
+
   .navbar-adjust-flex{
     justify-content: center;
+  }
+
+  #bg-home-top{
+    background-position: 87% 50%;
+  }
+}
+
+
+@include media-breakpoint-down(md){
+
+  #bg-home-top{
+    background-position: 87% 50%;
   }
 }
