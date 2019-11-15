@@ -18,4 +18,3 @@
 //= require jquery
 //= require popper
 //= require bootstrap.min
-//= require app
