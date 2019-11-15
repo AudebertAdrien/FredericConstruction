@@ -18,23 +18,3 @@
 //= require jquery
 //= require popper
 //= require bootstrap.min
-//= require js/main
-
-$('document').ready(function() {
-    //Variable
-    heightBgHome = $('#bg-home-top')[0].getBoundingClientRect().height;
-    navbar = $('.navbar')
-    hasScrollclass = navbar.hasClass("navbar-blue container")
-    
-    //Fonction
-    onscroll = function(){
-        if((window.pageYOffset > heightBgHome - 106) && !navbar.hasClass("navbar-blue")){
-            navbar.addClass("navbar-blue")
-        }else if ((window.pageYOffset < heightBgHome -106) && navbar.hasClass("navbar-blue")){
-            navbar.removeClass("navbar-blue")
-        }
-    }
-
-    //Fonction Call
-    $('window').scroll(onscroll)
-});
