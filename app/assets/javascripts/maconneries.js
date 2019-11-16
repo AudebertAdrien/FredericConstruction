@@ -1,3 +1,6 @@
-if (window.location.pathname === "/maconneries"){
-    navbar.classList.remove("fixed-top")
+if (window.location.pathname === "/maconneries") {
+  window.addEventListener("load", function() {
+    test = "adrien";
+    console.log(test);
+  });
 }
