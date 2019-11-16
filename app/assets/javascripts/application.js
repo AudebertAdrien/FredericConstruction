@@ -19,3 +19,4 @@
 //= require initializer
 //= require homes/index
 //= require maconneries/index
+//= require contacts/index
