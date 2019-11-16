@@ -13,9 +13,10 @@
     <title>Frederic Construction</title>
   </head>
 
-  <body class="<%= controller_name %> <%= action_name %>">
+  <body>
         <%= render 'layouts/navbar' %>
         <%= yield %>
         <%= render 'layouts/footer' %>
+        <%= insert_paloma_hook %>        
   </body>
 </html>
