@@ -2,7 +2,7 @@
 
 class DevisMailer < ApplicationMailer
   def devis_email
-    @url = 'test@gmail.com'
+    @url = ENV['URL']
     mail(to: @url, subject: 'Devis/Contact')
   end
 end
