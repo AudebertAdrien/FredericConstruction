@@ -1,0 +1,2 @@
+class DevisMailer < ApplicationMailer
+end
