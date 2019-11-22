@@ -15,11 +15,21 @@
 @import "bootstrap";
 
 h1, h2, h3, h4, h5, h6{
-  color: #FFC106;
+  color: #02132B;
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: underline red;
+}
+
+h2{
+  font-weight: 600;
+}
+
+*{
+  font-family: 'Work Sans', sans-serif;
 }
 
 a{
-  color: #FFC106 !important;
+  color: #ffffff!important;
 }
 
 .navbar-logo {
@@ -28,7 +38,7 @@ a{
 }
 
 .navbar-blue{
-  background-color: #017BFF !important;
+  background-color: #02132B!important;
 }
 
 .navbar-contact{
@@ -48,10 +58,18 @@ a{
   background-color: #FFF;
 }
 
+footer{
+  background-color: #02132B;
+}
+
+input[type="submit"]{
+  background-color: #D73F00;
+}
+
 
 @include media-breakpoint-down(xs){
   .navbar{
-    background-color: #017BFF!important;
+    background-color: #283350!important;
     padding: 0;
   }
 
