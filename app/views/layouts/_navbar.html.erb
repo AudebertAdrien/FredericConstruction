@@ -2,18 +2,19 @@
 
     <div class="row container d-flex flex-column nav-append-child">
 
-        <div class="col d-flex justify-content-center">
+        <div class="col">
             <%= link_to "#", class: "navbar-brand" do %>
             <%= image_tag("logo.png", alt:"Image logo", class: "navbar-logo", style:"height: 4em; width: auto;") %>
             <% end %>
         </div>
 
-        <div class="col d-flex justify-content-between">
 
-            <div class="navbar-contact">
-                <i class="fas fa-phone-square-alt fa-3"></i>
-                <span id="phone">01 02 03 04 05</span>
-            </div>
+        <div class="col navbar-contact text-center">
+            <i class="fas fa-phone-square-alt fa-3"></i>
+            <span id="phone">01 02 03 04 05</span>
+        </div>
+
+        <div class="col d-flex justify-content-end">
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -29,11 +30,12 @@
                 </ul>
             </div>
 
-            <button class="navbar-toggler h-50" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler h-50 mb-1" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
         </div>
+        
     </div>
 </nav>

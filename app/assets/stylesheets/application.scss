@@ -33,7 +33,7 @@ h2{
 }
 
 .navbar-logo {
-  width: 3em;
+  width: 2em;
   height: auto;
 }
 
@@ -43,6 +43,11 @@ h2{
 
 .navbar-contact *{
   font-size: 1.8em; 
+}
+
+.contact-appear{
+  display: block;
+  transition: display 2s;
 }
 
 #bg-home-top{
