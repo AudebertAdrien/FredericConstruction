@@ -37,21 +37,20 @@ h2{
   height: auto;
 }
 
-.navbar a{
+.navbar *{
   color: #ffffff!important;
 }
 
 .navbar-contact *{
   font-size: 1.8em; 
-  color: white !important;
 }
 
 #bg-home-top{
   height: 100vh;
   background-image: url("hero_1.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover;
+  background-position: 87% 10%;
 }
 
 .comment{
@@ -69,10 +68,10 @@ footer{
 
 ////////////////////////
 
-
+/*
 @include media-breakpoint-down(xs){
   .navbar{
-    background-color: #283350!important;
+    background-color: #28282D!important;
     padding: 0;
   }
 
@@ -92,7 +91,7 @@ footer{
   }
 
   .navbar-adjust-flex{
-    justify-content: center;
+    justify-content: end;
   }
 
   #bg-home-top{
@@ -107,3 +106,4 @@ footer{
     background-position: 87% 50%;
   }
 }
+*/
