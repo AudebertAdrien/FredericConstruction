@@ -2,14 +2,14 @@ Paloma.controller("Homes", {
   index: function() {
     navbar = document.querySelector(".navbar");
     heightBgHome = document.querySelector("#bg-home-top").getBoundingClientRect().height;
-    hasScrollclass = navbar.classList.contains("navbar-blue");
+    hasScrollclass = navbar.classList.contains("navbar-color-js");
 
     onScroll = function() {
       if (window.pageYOffset > heightBgHome - 106 && !hasScrollclass) {
-        navbar.classList.add("navbar-blue");
+        navbar.classList.add("navbar-color-js");
         hasScrollclass = true;
       } else if (window.pageYOffset < heightBgHome - 106 && hasScrollclass) {
-        navbar.classList.remove("navbar-blue");
+        navbar.classList.remove("navbar-color-js");
         hasScrollclass = false;
       }
     };

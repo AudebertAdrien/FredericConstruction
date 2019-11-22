@@ -10,13 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-
  */
+
 @import "bootstrap";
 
-h1, h2, h3, h4, h5, h6{
-  color: #02132B;
+
+*{
   font-family: 'Work Sans', sans-serif;
+  color: #28282D;
+}
+
+h1, h2, h3, h4, h5, h6{
   text-decoration: underline red;
 }
 
@@ -24,26 +28,22 @@ h2{
   font-weight: 600;
 }
 
-*{
-  font-family: 'Work Sans', sans-serif;
-}
-
-a{
-  color: #ffffff!important;
+.navbar-color-js{
+  background-color: #28282D!important;
 }
 
 .navbar-logo {
-  width: 4em;
+  width: 3em;
   height: auto;
 }
 
-.navbar-blue{
-  background-color: #02132B!important;
+.navbar a{
+  color: #ffffff!important;
 }
 
-.navbar-contact{
+.navbar-contact *{
   font-size: 1.8em; 
-  color: #FFC106;
+  color: white !important;
 }
 
 #bg-home-top{
@@ -58,13 +58,16 @@ a{
   background-color: #FFF;
 }
 
-footer{
-  background-color: #02132B;
-}
-
 input[type="submit"]{
   background-color: #D73F00;
 }
+
+footer{
+  background-color: #28282D;
+  height: 5em;
+}
+
+////////////////////////
 
 
 @include media-breakpoint-down(xs){

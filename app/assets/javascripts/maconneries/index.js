@@ -4,6 +4,6 @@ Paloma.controller("Maconneries", {
     jsOrder = document.querySelector(".js-order")
 
     navbar.classList.remove("fixed-top");
-    navbar.classList.add("navbar-blue");
+    navbar.classList.add("navbar-color-js");
   }
 });
