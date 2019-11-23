@@ -1,33 +1,51 @@
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <%= form_with(class: "vw-100") do %>
-    <div class="form-row">
-        <div class="form_group col-sm-6">
-            <%= label_tag(:inputLastName, "Nom") %>
-            <%= text_field_tag(:inputLastName, "", class: "form-control", placeholder: "Ex: Launey") %>
-        </div>
-        <div class="form_group col-sm-6">
-            <%= label_tag(:inputFirstName , "Prenom:") %>
-            <%= text_field_tag(:inputFirstName, "", class: "form-control", placeholder: "Ex: François") %>
-        </div>
+<div class="container text-justify">
+    <div class="mt-4">
+        <h2>Contactez nous</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perspiciatis, rem delectus quidem
+            obcaecati aspernatur, repellat enim suscipit libero maiores officia a quasi. Nisi tempora doloremque
+            expedita perferendis hic rerum.
+        </p>
     </div>
-    <div class="form-row">
-        <div class="form_group col-sm-6">
-            <%= label_tag(:inputEmail, "Email") %>
-            <%= email_field_tag(:inputEmail, "", class: "form-control", placeholder: "Ex: FrancoisLauney@gmail.com") %>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <%= form_with(class: "vw-100") do %>
+        <div class="form-row">
+            <div class="form_group col-md-6">
+                <%= label_tag(:inputLastName, "Nom") %>
+                <%= text_field_tag(:inputLastName, "", class: "form-control", placeholder: "Ex: Launey") %>
+            </div>
+            <div class="form_group col-md-6">
+                <%= label_tag(:inputFirstName , "Prenom:") %>
+                <%= text_field_tag(:inputFirstName, "", class: "form-control", placeholder: "Ex: François") %>
+            </div>
         </div>
-        <div class="form_group col-sm-6">
-            <%= label_tag(:inputTown, "Ville") %>
-            <%= text_field_tag(:inputTown, "", class: "form-control", placeholder: "Ex: Bordeaux") %>
+        <div class="form-row">
+            <div class="form_group col-md-6">
+                <%= label_tag(:inputEmail, "Email") %>
+                <%= email_field_tag(:inputEmail, "", class: "form-control", placeholder: "Ex: FrancoisLauney@gmail.com") %>
+            </div>
+            <div class="form_group col-md-6">
+                <%= label_tag(:inputPhone, "Tel") %>
+                <%= text_field_tag(:inputPhone, "", class: "form-control", placeholder: "Ex: 01.02.03.04.05") %>
+            </div>
         </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group col-sm-12">
-            <%= label_tag(:inputMessage, "Message") %>
-            <%= text_area(:inputMessage, "", rows: 8, class: "form-control", placeholder: "Je souhaite réaliser des traveaux..." ) %>
+        <div class="form-row">
+            <div class="form_group col-md-6">
+                <%= label_tag(:inputTown, "Ville") %>
+                <%= text_field_tag(:inputTown, "", class: "form-control", placeholder: "Ex: Périgueux") %>
+            </div>
         </div>
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <%= label_tag(:inputMessage, "Message") %>
+                <%= text_area(:inputMessage, "", rows: 8, class: "form-control", placeholder: "Ex: Je souhaite réaliser des traveaux..." ) %>
+            </div>
+        </div>
+        <div class="col-md-2 mx-auto text-center">
+            <%= submit_tag("Envoyer", class: "btn text-white")%>
+        </div>
+        <% end %>
     </div>
-    <div class="col-sm-2 mx-auto text-center">
-        <%= submit_tag("Envoyer", class: "btn text-white")%>
-    </div>
-    <% end %>
+
 </div>
