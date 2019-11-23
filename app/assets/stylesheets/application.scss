@@ -18,9 +18,11 @@
 *{
   font-family: 'Work Sans', sans-serif;
   color: #28282D;
+
 }
 
 h1, h2, h3, h4, h5, h6{
+  text-align: center;
   text-decoration: underline red;
 }
 
@@ -43,11 +45,6 @@ h2{
 
 .navbar-contact *{
   font-size: 1.8em; 
-}
-
-.contact-appear{
-  display: block;
-  transition: display 2s;
 }
 
 #bg-home-top{
