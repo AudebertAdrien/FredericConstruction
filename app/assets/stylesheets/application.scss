@@ -67,3 +67,18 @@ footer{
   background-color: #28282D;
   height: 5em;
 }
+
+@include media-breakpoint-up(md) {
+  #navbarChangeLayout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbar-contact{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

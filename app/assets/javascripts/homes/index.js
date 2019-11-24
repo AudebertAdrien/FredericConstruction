@@ -1,9 +1,9 @@
 Paloma.controller("Homes", {
   index: function() {
+
+    //Navbar transparancy to color
     navbar = document.querySelector(".navbar");
-    heightBgHome = document
-      .querySelector("#bg-home-top")
-      .getBoundingClientRect().height;
+    heightBgHome = document.querySelector("#bg-home-top").getBoundingClientRect().height;
     hasScrollclass = navbar.classList.contains("navbar-color-js");
 
     onScroll = function() {
@@ -16,5 +16,7 @@ Paloma.controller("Homes", {
       }
     };
     window.addEventListener("scroll", onScroll);
+
+    //////////////
   }
 });
