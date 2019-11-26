@@ -1,28 +1,29 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top container-fluid flex-column p-0">
-    <div class="row flex-column container">
-        <div class="col">
+    <div class="row container">
+        <div class="col-sm-12 col-md-6">
             <%= link_to "#", class: "navbar-brand" do %>
             <%= image_tag("logo3.png", alt:"Image logo", class: "navbar-logo", style:"height: 4em; width: auto;") %>
             <% end %>
         </div>
 
-<!--
-        <div class="col navbar-contact">
+        <div class="col-sm-12 col-md-6 text-md-right navbar-contact ml-3">
             <i class="fas fa-phone-square-alt fa-3"></i>
             <span id="phone">01 02 03 04 05</span>
         </div>
--->
-        <div class="col-12 d-flex justify-content-end">
+    </div>
+
+    <div class="row container nav-link pr-0">
+        <div class="col-12 d-flex justify-content-end pr-2">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <%= link_to "Home", root_path, class: "nav-link" %>
+                        <%= link_to "ACCUEIL", root_path, class: "nav-link" %>
                     </li>
                     <li class="nav-item">
-                        <%= link_to "Maçonnerie", maconneries_path, class: "nav-link" %>
+                        <%= link_to "MACONNERIE", maconneries_path, class: "nav-link" %>
                     </li>
                     <li class="nav-item">
-                        <%= link_to "Contact", contacts_path, class: "nav-link" %>
+                        <%= link_to "CONTACT", contacts_path, class: "nav-link" %>
                     </li>
                 </ul>
             </div>
@@ -31,6 +32,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+    </div>
 
     </div>
 </nav>
