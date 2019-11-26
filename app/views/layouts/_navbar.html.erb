@@ -1,18 +1,18 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top container-fluid justify-content-center text-white p-0">
-    <div class="row container d-flex flex-column">
-        <div id="navbarChangeLayout">
-            <div class="col">
-                <%= link_to "#", class: "navbar-brand" do %>
-                <%= image_tag("logo.png", alt:"Image logo", class: "navbar-logo", style:"height: 4em; width: auto;") %>
-                <% end %>
-            </div>
-            <div class="col navbar-contact">
-                <i class="fas fa-phone-square-alt fa-3"></i>
-                <span id="phone">01 02 03 04 05</span>
-            </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-light sticky-top container-fluid flex-column p-0">
+    <div class="row flex-column container">
+        <div class="col">
+            <%= link_to "#", class: "navbar-brand" do %>
+            <%= image_tag("logo3.png", alt:"Image logo", class: "navbar-logo", style:"height: 4em; width: auto;") %>
+            <% end %>
         </div>
 
-        <div class="col d-flex justify-content-end">
+<!--
+        <div class="col navbar-contact">
+            <i class="fas fa-phone-square-alt fa-3"></i>
+            <span id="phone">01 02 03 04 05</span>
+        </div>
+-->
+        <div class="col-12 d-flex justify-content-end">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -26,10 +26,11 @@
                     </li>
                 </ul>
             </div>
-            <button class="navbar-toggler h-50 mb-1" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler mb-1" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        </div>        
+        </div>
+
     </div>
 </nav>

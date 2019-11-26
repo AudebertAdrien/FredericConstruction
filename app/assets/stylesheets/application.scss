@@ -18,20 +18,19 @@
 *{
   font-family: 'Work Sans', sans-serif;
   color: #28282D;
+}
 
+body{
+  background-color: #E7E7E4;
 }
 
 h1, h2, h3, h4, h5, h6{
   text-align: center;
-  text-decoration: underline red;
+  text-decoration: underline #d71f1f;
 }
 
 h2{
   font-weight: 600;
-}
-
-.navbar-color-js{
-  background-color: #28282D!important;
 }
 
 .navbar-logo {
@@ -40,45 +39,39 @@ h2{
 }
 
 .navbar *{
-  color: #ffffff!important;
+  color: #28282D!important;
+}
+
+.ctn-body{
+  background-color: #D2D2D1!important;
 }
 
 .navbar-contact *{
   font-size: 1.8em; 
 }
 
+.navbar-toggler{
+  background-color: #d71f1f;
+}
+
 #bg-home-top{
-  height: 100vh;
-  background-image: url("hero_1.jpg");
+  height: 50vh;
+  background-image: url("maisonIndi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 87% 10%;
+  background-position: 50% 50%;
 }
+
 
 .comment{
   background-color: #FFF;
 }
 
 input[type="submit"]{
-  background-color: #D73F00;
+  background-color: #d71f1f;
 }
 
 footer{
   background-color: #28282D;
   height: 5em;
-}
-
-@include media-breakpoint-up(md) {
-  #navbarChangeLayout{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .navbar-contact{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
 }

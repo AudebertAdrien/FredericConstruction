@@ -1,6 +1,6 @@
 Paloma.controller("Homes", {
   index: function() {
-
+/*
     //Navbar transparancy to color
     navbar = document.querySelector(".navbar");
     heightBgHome = document.querySelector("#bg-home-top").getBoundingClientRect().height;
@@ -18,5 +18,6 @@ Paloma.controller("Homes", {
     window.addEventListener("scroll", onScroll);
 
     //////////////
+*/
   }
 });
