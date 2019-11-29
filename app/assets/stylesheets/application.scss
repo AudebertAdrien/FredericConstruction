@@ -61,20 +61,25 @@ h2{
   background-position: 50% 50%;
 }
 
+.jumbotron *{
+  font-weight: bold;
+}
+
 .bg-cardImage{
-  height: 100%;
   background-image: url("maisonIndi.jpg");
+  width: auto;
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.bg-col-Color{
-  background-color: 230, 228, 225, 0.8;
+.bg-whiteOp{
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-.jumbotron *{
-  font-weight: bold;
+.bg-col-Color{
+  background-color: 230, 228, 225, 0.8;
 }
 
 input[type="submit"]{
