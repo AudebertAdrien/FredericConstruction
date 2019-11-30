@@ -41,9 +41,24 @@ h2{
   color: #28282D!important;
 }
 
-.ctn-body{
+.ctn-presentations{
   background-color: #D2D2D1!important;
 }
+
+.ctn-row-icons{
+  background-color: #28282D;
+}
+
+.ctn-row-icons *{
+  color: #E7E7E4!important;
+}
+
+.ctn-comments{
+  background-color: #F6F5F5;
+}
+  .comment{
+    background-color: #FFF;
+  }
 
 .navbar-contact *{
   font-size: 1.4em; 
@@ -90,9 +105,3 @@ footer{
   background-color: #28282D;
   height: 5em;
 }
-
-/*
-.comment{
-  background-color: #FFF;
-}
-*/
