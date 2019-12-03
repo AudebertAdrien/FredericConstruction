@@ -8,10 +8,7 @@
         </p>
     </div>
 
-    <p>
-        Les champs indiqués par un astérisque (*) sont obligatoires
-    </p>
-
+    <small>Ce formulaire nous enverra un email</small>
     <div class="d-flex justify-content-center align-items-center">
         <%= form_with(class: "vw-100") do %>
         <div class="form-row">
@@ -43,11 +40,17 @@
         <div class="form-row">
             <div class="form-group col-md-12">
                 <%= label_tag(:inputMessage, "Message") %>
-                <%= text_area(:inputMessage, "", rows: 8, class: "form-control", placeholder: "Ex: Je souhaite réaliser des traveaux..." ) %>
+                <%= text_area(:inputMessage, "", rows: 8, class: "form-control", 
+                placeholder: "Ex: Je souhaite réaliser des traveaux...
+Ex: J'aimerais réaliser un devis pour une maison individuel...
+Ex: Je souhaiterez connaître vos tarif concernant..." ) %>
             </div>
         </div>
-        <div class="col-md-2 mx-auto text-center">
-            <%= submit_tag("Envoyer", class: "btn text-white")%>
+        <div class="col mx-auto text-center">
+            <small>Les champs indiqués par un astérisque (*) sont obligatoires</small>
+            <div>
+                <%= submit_tag("Envoyer", class: "btn")%>
+            </div>
         </div>
         <% end %>
     </div>

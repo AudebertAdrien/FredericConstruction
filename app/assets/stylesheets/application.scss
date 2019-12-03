@@ -14,6 +14,7 @@
 
 @import "bootstrap";
 
+// General CSS
 *{
   font-family: 'Work Sans', sans-serif;
   color: #28282D;
@@ -36,53 +37,34 @@ h2{
   text-decoration: none;
   position: relative;
 }
+  .underline:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: #D8400A;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    width: 25%;
+    margin: 0 auto;
+  }
 
-.underline:after{
-  position: absolute;
-  content: "";
-  height: 4px;
-  background-color: red;
-  left: 0;
-  right: 0;
-  bottom: -4px;
-  width: 10%;
-  margin: 0 auto;
+.btn{
+  background-color: #d71f1f;
+  color: #FFF;
+}
+ 
+a{
+  color: #d71f1f;
+  font-weight: 600;
 }
 
-.jumbotron h1{
-  margin: 0;
-}
 
+// Navbar
 .navbar-logo {
   width: auto;
   height: 4em;
 }
-
-.navbar *{
-  color: #28282D!important;
-}
-
-.ctn-presentations{
-  background-color: #D2D2D1!important;
-}
-  .ctn-presentations img{
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-  }
-
-.ctn-row-icons{
-  background-color: #28282D;
-}
-
-.ctn-row-icons *{
-  color: #E7E7E4!important;
-}
-
-.ctn-comments{
-  background-color: #F6F5F5;
-}
-  .comment{
-    background-color: #FFF;
-  }
 
 .navbar-contact *{
   font-size: 1.4em; 
@@ -92,6 +74,15 @@ h2{
   background-color: #D8400A;
 }
 
+.navbar *{
+  color: #28282D!important;
+}
+
+.nav-link:hover {
+  color: #d71f1f!important;
+}
+
+// Jumbotron Section
 #bg-home-top{
   height: 50vh;
   background-image: url("maisonIndi.jpg");
@@ -100,10 +91,36 @@ h2{
   background-position: 50% 50%;
 }
 
-.jumbotron *{
-  font-weight: bold;
+.jumbotron h1{
+  margin: 0;
 }
 
+// Presentation Section
+.ctn-presentations{
+  background-color: #D2D2D1!important;
+}
+  .ctn-presentations img{
+    box-shadow: 12px 12px 2px 1px rgba(0,0,0,0.75);
+  }
+
+// Icons Section
+.ctn-row-icons{
+  background-color: #28282D;
+}
+
+.ctn-row-icons *{
+  color: #E7E7E4!important;
+}
+
+// Comments Section
+.ctn-comments{
+  background-color: #F6F5F5;
+}
+  .comment{
+    background-color: #FFF;
+  }
+
+// Card Section
 .bg-cardImage{
   background-image: url("maisonIndi.jpg");
   width: auto;
@@ -117,17 +134,8 @@ h2{
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.bg-col-Color{
-  background-color: 230, 228, 225, 0.8;
-}
-
-input[type="submit"]{
-  background-color: #d71f1f;
-}
-
+// Footer
 footer{
   background-color: #28282D;
   height: 5em;
 }
-
-//maconneries_path

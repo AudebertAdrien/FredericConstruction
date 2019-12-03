@@ -1,5 +1,5 @@
 <div class="container d-flex flex-wrap text-justify p-5 ctn-body">
-    <div class="row my-md-4 align-items-center">
+    <div class="row my-4 align-items-center">
         <div class="col">
             <h2 class="underline">Description du métier</h2>
             <p>
@@ -9,7 +9,8 @@
             </p>
         </div>
     </div>
-    <div class="row my-md-4 align-items-center justify-content-around">
+
+    <div class="row my-4 align-items-center justify-content-around">
         <div class="col-md-5">
             <%= image_tag("img_1.jpg", alt: "Image", class: "rounded img-fluid") %>
         </div>
@@ -50,5 +51,10 @@
                 provident a inventore.
             </p>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col text-center">
+        <%= link_to "Devis Gratuit", contacts_path, class: "btn" %>
     </div>
 </div>

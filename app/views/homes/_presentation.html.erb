@@ -1,4 +1,4 @@
-<div class="container d-flex justify-content-center text-justify ctn-presentations mt-5 p-5">
+<div class="container d-flex flex-column justify-content-center text-justify ctn-presentations mt-5 p-5">
     <div class="row align-items-center" style="min-height: 500px;">
         <div class="col d-flex flex-column">
             <h2 class="underline">Entreprise de Construction</h2>
@@ -15,6 +15,11 @@
         </div>
         <div class="col-md mt-5">
             <%= image_tag("builder.jpg", alt: "Ouvrier", class: "img-fluid") %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <%= link_to "Contactez nous", contacts_path, class: "btn" %>
         </div>
     </div>
 </div>
