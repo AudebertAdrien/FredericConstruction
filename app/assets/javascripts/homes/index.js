@@ -22,8 +22,8 @@ Paloma.controller("Homes", {
         navLink.classList.remove("container")
         navLink.classList.add("container-fluid")
       } else {
-        navLink.classList.add("container")
         navLink.classList.remove("container-fluid")
+        navLink.classList.add("container")
       }
     });
   }
