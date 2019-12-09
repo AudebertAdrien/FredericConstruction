@@ -10,16 +10,16 @@ Paloma.controller("Contacts", {
     // Initialization navbar
     blockLogoContact.style.display = "none";
     navbar.classList.remove("bg-light", "shadow", "sticky-top");
-    navbar.classList.add("bg-transparent", "fixed-top", "mt-3");
+    navbar.classList.add("bg-transparent", "fixed-top", "pt-3");
     //
 
     function lessThan(e) {
       if (e.matches) {
         blockLogoContact.style.display = "none";
         navbar.classList.remove("bg-light", "shadow", "sticky-top");
-        navbar.classList.add("bg-transparent", "fixed-top", "mt-3");
+        navbar.classList.add("bg-transparent", "fixed-top", "pt-3");
       } else {
-        navbar.classList.remove("bg-transparent", "fixed-top", "mt-3");
+        navbar.classList.remove("bg-transparent", "fixed-top", "pt-3");
         navbar.classList.add("bg-light", "shadow", "sticky-top");
 
         blockLogoContact.style.display = "flex";
