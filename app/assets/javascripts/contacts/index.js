@@ -7,12 +7,6 @@ Paloma.controller("Contacts", {
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 768px)");
 
-    // Initialization navbar
-    blockLogoContact.style.display = "none";
-    navbar.classList.remove("bg-light", "shadow", "sticky-top");
-    navbar.classList.add("bg-transparent", "fixed-top", "pt-3");
-    //
-
     function lessThan(e) {
       if (e.matches) {
         blockLogoContact.style.display = "none";
@@ -25,7 +19,7 @@ Paloma.controller("Contacts", {
         blockLogoContact.style.display = "flex";
       }
     }
-
+    lessThan(mediumDevise)
     mediumDevise.addListener(lessThan);
 
 
