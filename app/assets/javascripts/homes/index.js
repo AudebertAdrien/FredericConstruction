@@ -11,7 +11,7 @@ Paloma.controller("Homes", {
       } else {
         navLink.classList.add("container")
         navLink.classList.remove("container-fluid")
-      }  
+      }
     }
 
     mediumDevise.addListener(lessThanMd)
