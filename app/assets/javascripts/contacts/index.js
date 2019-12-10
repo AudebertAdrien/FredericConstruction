@@ -7,7 +7,22 @@ Paloma.controller("Contacts", {
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 768px)");
 
-    function lessThan(e) {
+
+    // Navbar fluid for resize
+    function resizeLowerMd(e) {
+      if (e.matches) {
+        navLink.classList.remove("container")
+        navLink.classList.add("container-fluid")
+      } else {
+        navLink.classList.add("container")
+        navLink.classList.remove("container-fluid")
+      }
+    }
+
+    mediumDevise.addListener(resizeLowerMd)
+
+    // Navbar for mobile
+    function navbarMobile(e) {
       if (e.matches) {
         blockLogoContact.style.display = "none";
         navbar.classList.remove("bg-light", "shadow", "sticky-top");
@@ -19,10 +34,10 @@ Paloma.controller("Contacts", {
         blockLogoContact.style.display = "flex";
       }
     }
-    lessThan(mediumDevise)
-    mediumDevise.addListener(lessThan);
+    navbarMobile(mediumDevise)
+    mediumDevise.addListener(navbarMobile);
 
-
+    // Navbar fluid if orientationchange
     window.addEventListener("orientationchange", function(e) {
       if (screen.orientation.angle == 90) {
         navLink.classList.remove("container");
@@ -33,7 +48,7 @@ Paloma.controller("Contacts", {
       }
     });
 
-    
+    // Nabbar collaspse bg-color
     function navbarCollaspse() {
       if (navbar.style.backgroundColor == ""){
         navbar.classList.remove("bg-transparent")

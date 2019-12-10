@@ -1,10 +1,14 @@
 Paloma.controller("Homes", {
   index: function() {
+    navbar = document.querySelector("nav");
     navLink = document.querySelector(".line-link");
+    blockLogoContact = document.querySelector(".blockLogoContact");
+    navbarToggler = document.querySelector(".navbar-toggler")
+    mediumDevise = window.matchMedia("(max-width: 768px)");
 
-    mediumDevise = window.matchMedia("(max-width: 768px)")
 
-    function lessThanMd(e) {
+    // Navbar fluid for resize
+    function resizeLowerMd(e) {
       if (e.matches) {
         navLink.classList.remove("container")
         navLink.classList.add("container-fluid")
@@ -14,17 +18,45 @@ Paloma.controller("Homes", {
       }
     }
 
-    mediumDevise.addListener(lessThanMd)
-    
+    mediumDevise.addListener(resizeLowerMd)
 
-    window.addEventListener("orientationchange", function(e) {
-      if (screen.orientation.angle == 90){
-        navLink.classList.remove("container")
-        navLink.classList.add("container-fluid")
+    // Navbar for mobile
+    function navbarMobile(e) {
+      if (e.matches) {
+        blockLogoContact.style.display = "none";
+        navbar.classList.remove("bg-light", "shadow", "sticky-top");
+        navbar.classList.add("bg-transparent", "fixed-top", "pt-3");
       } else {
-        navLink.classList.remove("container-fluid")
-        navLink.classList.add("container")
+        navbar.classList.remove("bg-transparent", "fixed-top", "pt-3");
+        navbar.classList.add("bg-light", "shadow", "sticky-top");
+
+        blockLogoContact.style.display = "flex";
+      }
+    }
+    navbarMobile(mediumDevise)
+    mediumDevise.addListener(navbarMobile);
+
+    // Navbar fluid if orientationchange
+    window.addEventListener("orientationchange", function(e) {
+      if (screen.orientation.angle == 90) {
+        navLink.classList.remove("container");
+        navLink.classList.add("container-fluid");
+      } else {
+        navLink.classList.remove("container-fluid");
+        navLink.classList.add("container");
       }
     });
+
+    // Nabbar collaspse bg-color
+    function navbarCollaspse() {
+      if (navbar.style.backgroundColor == ""){
+        navbar.classList.remove("bg-transparent")
+        navbar.style.backgroundColor = "#FFF"
+      } else {
+        navbar.style.backgroundColor = ""
+        navbar.classList.add("bg-transparent")
+      }
+    }
+    navbarToggler.addEventListener("click", navbarCollaspse)
   }
 });
