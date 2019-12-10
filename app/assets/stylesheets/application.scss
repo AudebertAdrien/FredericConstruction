@@ -85,10 +85,15 @@ a{
 // Jumbotron Section
 #bg-home-top{
   height: 70vh;
-  background-image: url("maisonIndi.jpg");
+  background-image: url("bgMaisonJumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.jumbotron *{
+  color: #D2D2D1 !important;
+
 }
 
 .jumbotron h1{
@@ -121,8 +126,32 @@ a{
   }
 
 // Card Section
-.bg-cardImage{
-  background-image: url("maisonIndi.jpg");
+.bg-cardMaconnerie{
+  background-image: url("maconnerie.jpg");
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.bg-cardCharpente{
+  background-image: url("photoDeChantier/charpente.jpg");
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.bg-cardZinguerie{
+  background-image: url("photoDeChantier/zinguerie.jpg");
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.bg-cardFaience{
+  background-image: url("photoDeChantier/faïence3.jpg");
   width: auto;
   height: auto;
   background-repeat: no-repeat;
