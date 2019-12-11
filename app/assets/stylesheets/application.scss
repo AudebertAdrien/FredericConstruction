@@ -91,11 +91,6 @@ a{
   background-position: 50% 50%;
 }
 
-.jumbotron *{
-  color: #D2D2D1 !important;
-
-}
-
 .jumbotron h1{
   margin: 0;
 }
@@ -110,11 +105,7 @@ a{
 
 // Icons Section
 .ctn-row-icons{
-  background-color: #28282D;
-}
-
-.ctn-row-icons *{
-  color: #E7E7E4!important;
+  background-color: #D2D2D1;
 }
 
 // Comments Section
@@ -124,6 +115,13 @@ a{
   .comment{
     background-color: #FFF;
   }
+
+blockquote::before{
+  content: "❝";
+}
+blockquote::after{
+  content: "❞";
+}
 
 // Card Section
 .bg-cardMaconnerie{
@@ -163,12 +161,6 @@ a{
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-// Footer
-footer{
-  background-color: #28282D;
-  height: 5em;
-}
-
 // Maconnerie
 .maconnerie .row .col-md-5:first-child{
   height: 250px;
@@ -179,3 +171,10 @@ footer{
   width: 100%;
   height: 100%;
 }
+
+// Footer
+footer{
+  background-color: #28282D;
+  height: 5em;
+}
+
