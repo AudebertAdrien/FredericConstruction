@@ -5,7 +5,7 @@ Paloma.controller("Homes", {
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 767px)");
-
+  
 
     // Navbar fluid for resize
     function resizeLowerMd(e) {

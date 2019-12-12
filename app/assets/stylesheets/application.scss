@@ -107,6 +107,9 @@ a{
 .ctn-row-icons{
   background-color: #D2D2D1;
 }
+  .ctn-row-icons img{
+    background-color: #D8400A;
+  }
 
 // Comments Section
 .ctn-comments{
@@ -116,14 +119,15 @@ a{
     background-color: #FFF;
   }
 
-blockquote::before{
+.ctn-comments blockquote::before{
   content: "❝";
 }
-blockquote::after{
+.ctn-comments blockquote::after{
   content: "❞";
 }
 
 // Card Section
+
 .bg-cardMaconnerie{
   background-image: url("maconnerie.jpg");
   width: auto;
@@ -173,8 +177,8 @@ blockquote::after{
 }
 
 // Footer
-footer{
+footer *{
   background-color: #28282D;
-  height: 5em;
+  color: #FFF;
 }
 
