@@ -21,7 +21,7 @@
 }
 
 body{
-  background-color: #E7E7E4;
+  background-color: #E8E8E8;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -41,7 +41,7 @@ h2{
     position: absolute;
     content: "";
     height: 4px;
-    background-color: #D8400A;
+    background-color: #E23A0F;
     left: 0;
     right: 0;
     bottom: -4px;
@@ -50,12 +50,12 @@ h2{
   }
 
 .btn{
-  background-color: #d71f1f;
+  background-color: #E23A0F;
   color: #FFF;
 }
  
 a{
-  color: #d71f1f;
+  color: #E23A0F;
   font-weight: 600;
 }
 
@@ -71,7 +71,7 @@ a{
 }
 
 .navbar-toggler{
-  background-color: #D8400A;
+  background-color: #E23A0F;
 }
 
 .navbar *{
@@ -79,7 +79,7 @@ a{
 }
 
 .nav-link:hover {
-  color: #d71f1f!important;
+  color: #E23A0F!important;
 }
 
 // Jumbotron Section
@@ -97,7 +97,7 @@ a{
 
 // Presentation Section
 .ctn-presentations{
-  background-color: #D2D2D1!important;
+  background-color: #D6D6D6!important;
 }
   .ctn-presentations img{
     box-shadow: 12px 12px 2px 1px rgba(0,0,0,0.75);
@@ -105,10 +105,10 @@ a{
 
 // Icons Section
 .ctn-row-icons{
-  background-color: #D2D2D1;
+  background-color: #D6D6D6;
 }
   .ctn-row-icons img{
-    background-color: #D8400A;
+    background-color: #E23A0F;
   }
 
 // Comments Section
