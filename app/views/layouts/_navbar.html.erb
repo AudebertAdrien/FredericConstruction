@@ -12,18 +12,30 @@
         </div>
     </div>
 
-    <div class="row container align-items-start line-link">
+    <div class="row container-fluid align-items-start line-link">
 
         <div class="col col-md-12">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
+                <ul class="navbar-nav">
+                    <li class="nav-item text-center">
                         <%= link_to "ACCUEIL", root_path, class: "nav-link" %>
                     </li>
-                    <li class="nav-item">
-                        <%= link_to "MACONNERIE", maconneries_path, class: "nav-link" %>
+                    <li class="nav-item text-center">
+                        <%= link_to "MACONNERIE TERRASSEMENT", maconneries_path, class: "nav-link" %>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
+                        <%= link_to "CHARPENTE", charpentes_path, class: "nav-link" %>
+                    </li>
+                    <li class="nav-item text-center">
+                        <%= link_to "COUVERTURE ZINGUERIE", couv_zings_path, class: "nav-link" %>
+                    </li>
+                    <li class="nav-item text-center">
+                        <%= link_to "CARRELAGE FAÏENCE", carr_faiences_path, class: "nav-link" %>
+                    </li>
+                    <li class="nav-item text-center">
+                        <%= link_to "REALISATIONS",contacts_path, class: "nav-link" %>
+                    </li>
+                    <li class="nav-item text-center">
                         <%= link_to "CONTACT", contacts_path, class: "nav-link" %>
                     </li>
                 </ul>
