@@ -3,7 +3,7 @@ Rails.application.configure do
   #My add
   #ActionMailer Gmail
   config.action_mailer.delivery_method = :smtp
-  host = 'https://dashboard.heroku.com/apps/frederic-construction'
+  host = 'https://frederic-construction.herokuapp.com/'
   config.action_mailer.default_url_options = { host: host }
 
   ActionMailer::Base.smtp_settings =   {
