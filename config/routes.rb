@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   root to: 'homes#index'
   resources :homes, only: [:index]
   resources :maconneries, only: [:index]
