@@ -57,6 +57,6 @@ Paloma.controller("Homes", {
         navbar.classList.add("bg-transparent")
       }
     }
-    navbarToggler.addEventListener("click", navbarCollaspse)
+    navbarToggler.addEventListener("click", navbarCollaspse)        
   }
 });
