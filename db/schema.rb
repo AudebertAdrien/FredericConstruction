@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2019_12_21_115938) do
 
   create_table "realisations", force: :cascade do |t|
     t.string "name"
-    t.text "decription"
+    t.text "description"
     t.string "city"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
