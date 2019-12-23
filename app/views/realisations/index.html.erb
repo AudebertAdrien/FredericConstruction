@@ -1,1 +1,12 @@
-<h1>test</h1>
+<div class="container d-flex flex-wrap justify-content-center">
+    <% @realisations.each do |realisation| %>
+    <div class="card m-4" style="width: 18rem;">
+        <%= image_tag("photoDeChantier/zinguerieGrosOeuvre.jpg", alt: "image de chantier", class: "card-img-top image-fit") %>
+        <div class="card-body">
+            <h5 class="card-title"><%= realisation.name %></h5>
+            <p class="card-text"><%= realisation.description %></p>
+            <%= link_to "Detail", realisation_path(realisation) %>
+        </div>
+    </div>
+    <% end %>
+</div>

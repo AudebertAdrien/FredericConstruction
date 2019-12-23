@@ -186,3 +186,9 @@ footer *{
   border: 2px solid #E23A0F!important;
   border-radius: 5px;
 }
+
+// Realisation
+.image-fit{
+  height: 12rem;
+  object-fit: cover;
+}

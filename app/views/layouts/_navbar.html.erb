@@ -61,6 +61,8 @@
                         Option
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <%= link_to "Créer une réalisation", new_realisation_path, class: "dropdown-item" %>
+                            
                             <%= link_to "Realisations", realisations_path, method: :get, class: "dropdown-item" %>
                             <%= link_to "Editer un compte", edit_admin_registration_path, method: :get, class: "dropdown-item" %>
                             <%= link_to "Delete account", admin_registration_path, method: :delete, class: "dropdown-item" %>
