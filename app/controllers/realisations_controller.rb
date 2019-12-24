@@ -13,6 +13,7 @@ class RealisationsController < ApplicationController
     def create
         puts "#" * 100
         puts params
+        Realisation.create(name: params[:title])
         puts "#" * 100
     end
 end
