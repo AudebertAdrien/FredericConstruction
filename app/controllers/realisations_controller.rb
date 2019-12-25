@@ -11,9 +11,14 @@ class RealisationsController < ApplicationController
     end
 
     def create
-        puts "#" * 100
-        puts params
-        Realisation.create(title: params[:title], description: params[:description], city: params[:city])
-        puts "#" * 100
+        newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
+        newRealisation.pictures.attach(params[:pictures])
+        newRealisation.save
+        redirect_to (realisation_path(newRealisation))
+    end
+
+    def destroy
+        Realisation.find(params[:id]).delete
+        redirect_to realisations_path
     end
 end
