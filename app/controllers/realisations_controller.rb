@@ -1,17 +1,19 @@
 class RealisationsController < ApplicationController
     def index
-        @realisation = Realisation.all
+        @realisations = Realisation.all
     end
 
     def new
     end
-    
+
+    def show
+        @realisation = Realisation.find(params[:id])
+    end
+
     def create
-    end
-
-    def update
-    end
-
-    def delete
+        puts "#" * 100
+        puts params
+        Realisation.create(title: params[:title], description: params[:description], city: params[:city])
+        puts "#" * 100
     end
 end

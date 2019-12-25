@@ -176,6 +176,12 @@ a{
   height: 100%;
 }
 
+// Realisation
+.image-fit{
+  height: 12rem;
+  object-fit: cover;
+}
+
 // Footer
 footer *{
   background-color: #28282D;
