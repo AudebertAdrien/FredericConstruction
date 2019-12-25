@@ -1,8 +1,17 @@
-<div class="container d-flex flex-column align-items-center m-5">
+<div class="container m-5">
     <h3>Redaction de réalisation</h3>
 
-    <%= form_with url: realisations_path do |form| %>
+    <%= form_with url: realisations_path, class: "d-flex flex-column align-items-center" do |form| %>
+
+    <%= label(:title, :Titre) %>
     <%= form.text_field :title %>
+
+    <%= label(:description, :Description) %>
+    <%= form.text_area :description %>
+
+    <%= label(:city, :Ville) %>
+    <%= form.text_field :city %>
+
     <%= form.submit %>
     <% end %>
 </div>

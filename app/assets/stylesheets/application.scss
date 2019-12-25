@@ -176,6 +176,12 @@ a{
   height: 100%;
 }
 
+// Realisation
+.image-fit{
+  height: 12rem;
+  object-fit: cover;
+}
+
 // Footer
 footer *{
   background-color: #28282D;
@@ -185,10 +191,4 @@ footer *{
 .border{
   border: 2px solid #E23A0F!important;
   border-radius: 5px;
-}
-
-// Realisation
-.image-fit{
-  height: 12rem;
-  object-fit: cover;
 }
