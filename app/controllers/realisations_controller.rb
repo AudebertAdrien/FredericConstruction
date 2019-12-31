@@ -14,7 +14,7 @@ class RealisationsController < ApplicationController
         newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
         newRealisation.pictures.attach(params[:pictures])
         newRealisation.save
-        redirect_to (realisation_path(newRealisation))
+        redirect_to realisation_path(newRealisation.id)
     end
 
     def destroy

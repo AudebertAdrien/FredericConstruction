@@ -1,18 +1,7 @@
 <h3>Show</h3>
 
 <% if @realisation.pictures.attached? %>
-<div class="container d-flex flex-wrap justify-content-center">
-    <div class="card m-4" style="width: 18rem;">
-        <%= image_tag @realisation.pictures, alt: "image de chantier", class: "card-img-top image-fit" %>
-        <div class="card-body">
-            <h5 class="card-title"><%= realisation.title %></h5>
-            <p class="card-text"><%= realisation.description %></p>
-            <% if admin_signed_in? %>
-                <%= link_to "Supprimer", realisation_path(realisation), method: :delete %>
-            <% end %>
-        </div>
-    </div>
-</div>
-<% else %>
-<p>Pas encore d'attache</p>
+<%= image_tag(@realisation.pictures, alt: "image de chantier") %>
 <% end %>
+
+
