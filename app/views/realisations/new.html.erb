@@ -1,7 +1,7 @@
-<div class="container m-5">
+<div class="container">
     <h3>Redaction de réalisation</h3>
 
-    <%= form_with url: realisations_path, class: "d-flex flex-column align-items-center" do |form| %>
+    <%= form_with url: realisations_path, class: "d-flex flex-column align-items-center", local: true do |form| %>
 
     <%= label(:title, :Titre) %>
     <%= form.text_field :title %>
@@ -9,10 +9,9 @@
     <%= label(:description, :Description) %>
     <%= form.text_area :description %>
 
-    <%= label(:city, :Ville) %>
-    <%= form.text_field :city %>
-
-    <%= form.file_field:pictures %>
+    <%= form.file_field :image, multiple: true %>
+    <%= form.file_field :image, multiple: true %>
+    <%= form.file_field :image, multiple: true %>
 
     <%= form.submit %>
     <% end %>

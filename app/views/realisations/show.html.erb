@@ -1,7 +1,16 @@
-<h3>Show</h3>
+<div class="container">
 
-<% if @realisation.pictures.attached? %>
-<%= image_tag(@realisation.pictures, alt: "image de chantier") %>
-<% end %>
+    <h3><%= @realisation.title %></h3>
+    <p><%= @realisation.description %></p>
 
+    <% if @realisation.image.attached? %>
+        <div class="container d-flex flex-wrap justify-content-center">
+        <% @realisation.image.each do |image| %>
+            <div class="card m-4" style="width: 18rem;">
+                <%= image_tag(image, alt: "image de chantier", class: "card-img-top image-fit") %>
+            </div>
+        <% end %>
+        </div>
+    <% end %>
 
+</div>

@@ -1,3 +1,3 @@
 class Realisation < ApplicationRecord
-    has_one_attached :pictures
+    has_many_attached :image
 end

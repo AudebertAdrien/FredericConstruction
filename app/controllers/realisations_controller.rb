@@ -11,10 +11,10 @@ class RealisationsController < ApplicationController
     end
 
     def create
-        newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
-        newRealisation.pictures.attach(params[:pictures])
-        newRealisation.save
-        redirect_to realisation_path(newRealisation.id)
+        @newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
+        @newRealisation.image.attach(params[:image])
+        @newRealisation.save
+        redirect_to realisation_path(@newRealisation)
     end
 
     def destroy

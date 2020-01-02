@@ -192,3 +192,9 @@ footer *{
   border: 2px solid #E23A0F!important;
   border-radius: 5px;
 }
+
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}

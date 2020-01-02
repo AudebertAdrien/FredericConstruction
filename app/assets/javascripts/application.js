@@ -20,3 +20,7 @@
 //= require homes/index
 //= require maconneries/index
 //= require contacts/index
+//= require realisations/index
+//= require couv_zings/index
+//= require carr_faiences/index
+//= require charpentes/index
