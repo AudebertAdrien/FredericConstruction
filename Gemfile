@@ -7,6 +7,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'table_print'
 gem 'paloma', '~> 5.1.0'
 gem 'dotenv-rails'
+gem 'google-cloud-storage', '~> 0.20.0', require: false
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
