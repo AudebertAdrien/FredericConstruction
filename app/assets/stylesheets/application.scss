@@ -59,6 +59,15 @@ a{
   font-weight: 600;
 }
 
+.main{
+  min-height: 60vh;
+}
+
+.main-flex{
+  display: flex;
+  align-items: center;
+}
+
 
 // Navbar
 .navbar-logo {
@@ -127,7 +136,6 @@ a{
 }
 
 // Card Section
-
 .bg-cardMaconnerie{
   background-image: url("maconnerie.jpg");
   width: auto;
@@ -182,6 +190,12 @@ a{
   object-fit: cover;
 }
 
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
+}
+
 // Footer
 footer *{
   background-color: #28282D;
@@ -191,10 +205,4 @@ footer *{
 .border{
   border: 2px solid #E23A0F!important;
   border-radius: 5px;
-}
-
-.ellipsis{
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden; 
 }

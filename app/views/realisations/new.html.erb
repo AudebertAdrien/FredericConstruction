@@ -9,9 +9,9 @@
     <%= label(:description, :Description) %>
     <%= form.text_area :description %>
 
-    <%= form.file_field :image, multiple: true %>
-    <%= form.file_field :image, multiple: true %>
-    <%= form.file_field :image, multiple: true %>
+    <%= form.file_field :image, multiple: true, id: 1 %>
+    <%= form.file_field :image, multiple: true, id: 2 %>
+    <%= form.file_field :image, multiple: true, id: 3 %>
 
     <%= form.submit %>
     <% end %>

@@ -12,9 +12,12 @@ class RealisationsController < ApplicationController
 
     def create
         @newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
-        @newRealisation.image.attach(params[:image])
+        if params[:image].present?
+            @newRealisation.image.attach(params[:image])
+        end
+
         @newRealisation.save
-        redirect_to realisation_path(@newRealisation)
+        redirect_to realisation_path(@newRealisation.id)
     end
 
     def destroy

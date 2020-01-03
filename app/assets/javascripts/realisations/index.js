@@ -5,7 +5,10 @@ Paloma.controller("Realisations", {
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 767px)");
-  
+    main = document.querySelector(".main")
+
+    // add flex to the main for this uniq page
+    main.classList.add("main-flex")
 
     // Navbar fluid for resize
     function resizeLowerMd(e) {
@@ -65,7 +68,14 @@ Paloma.controller("Realisations", {
           cardText[i].classList.add("ellipsis")
       }
     }
-    
 
+  },
+
+  show: function() {
+    main = document.querySelector(".main");
+
+    // add flex to the main for this uniq page
+    main.classList.add("main-flex");
   }
+  
 });
