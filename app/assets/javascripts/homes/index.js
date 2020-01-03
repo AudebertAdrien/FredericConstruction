@@ -57,6 +57,14 @@ Paloma.controller("Homes", {
         navbar.classList.add("bg-transparent")
       }
     }
-    navbarToggler.addEventListener("click", navbarCollaspse)        
+    navbarToggler.addEventListener("click", navbarCollaspse)
+    
+    // Realisations card maximum length
+    cardText = document.querySelectorAll(".card-text")
+    for (i = 0; i < cardText.length; i++){
+      if (cardText[i].textContent.length > 55){
+          cardText[i].classList.add("ellipsis")
+      }
+    }
   }
 });

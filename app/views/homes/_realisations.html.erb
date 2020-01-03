@@ -1,0 +1,21 @@
+<% if @realisations.present? %>
+<div class="container d-flex flex-wrap justify-content-center">
+    <% threeLastRealisation(@realisations).each do |realisation| %>
+    <div class="card m-4" style="width: 18rem;">
+        <% if realisation.image.attached? %>
+            <%= image_tag(realisation.image.first, alt: realisation.title, class: "card-img-top image-fit") %>
+        <% end %>
+        <div class="card-body d-flex flex-column">
+            <h5 class="card-title"><%= realisation.title %></h5>
+            <p class="card-text"><%= realisation.description %></p>
+            <div>
+                <%= link_to "Detail", realisation_path(realisation) %>
+                <% if admin_signed_in? %>
+                    <%= link_to "Supprimer", realisation_path(realisation), method: :delete %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+    <% end %>
+</div>
+<% end %>

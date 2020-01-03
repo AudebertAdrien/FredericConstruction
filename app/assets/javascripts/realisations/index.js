@@ -5,7 +5,9 @@ Paloma.controller("Realisations", {
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 767px)");
-    main = document.querySelector(".main")
+    cardText = document.querySelectorAll(".card-text");
+    main = document.querySelector(".main");
+
 
     // add flex to the main for this uniq page
     main.classList.add("main-flex")
@@ -62,13 +64,12 @@ Paloma.controller("Realisations", {
     }
     navbarToggler.addEventListener("click", navbarCollaspse)
 
-    cardText = document.querySelectorAll(".card-text")
+    // Realisations card maximum length
     for (i = 0; i < cardText.length; i++){
       if (cardText[i].textContent.length > 55){
           cardText[i].classList.add("ellipsis")
       }
     }
-
   },
 
   show: function() {
