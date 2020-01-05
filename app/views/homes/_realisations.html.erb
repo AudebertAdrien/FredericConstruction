@@ -1,4 +1,4 @@
-<% if @realisations.present? %>
+<% if !@realisations.any? %>
 <div class="container d-flex flex-wrap justify-content-center">
     <% threeLastRealisation(@realisations).each do |realisation| %>
     <div class="card m-4" style="width: 18rem;">
