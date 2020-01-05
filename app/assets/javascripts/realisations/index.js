@@ -5,7 +5,7 @@ Paloma.controller("Realisations", {
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 767px)");
-    cardText = document.querySelectorAll(".card-text");
+    cardDescritption = document.querySelectorAll(".card-description");
     main = document.querySelector(".main");
 
 
@@ -65,9 +65,9 @@ Paloma.controller("Realisations", {
     navbarToggler.addEventListener("click", navbarCollaspse)
 
     // Realisations card maximum length
-    for (i = 0; i < cardText.length; i++){
-      if (cardText[i].textContent.length > 55){
-          cardText[i].classList.add("ellipsis")
+    for (i = 0; i < cardDescritption.length; i++){
+      if (cardDescritption[i].textContent.length > 55){
+        cardDescritption[i].classList.add("ellipsis")
       }
     }
   },
