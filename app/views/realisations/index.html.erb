@@ -10,7 +10,7 @@
             <div>
                 <%= link_to "Detail", realisation_path(realisation) %>
                 <% if admin_signed_in? %>
-                <%= link_to "Supprimer", realisation_path(realisation), method: :delete %>
+                <%= link_to "Supprimer", realisation_path(realisation), method: :delete, data: {confirm: "Confirmer pour la supression"} %>
                 <% end %>
             </div>
         </div>
