@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :charpentes, only: [:index]
   resources :couv_zings, only: [:index]
   resources :carr_faiences, only: [:index]
+  resources :mentions, only: [:index]
   resources :realisations
 
   resources :contacts, only: [:index, :create]

@@ -21,8 +21,6 @@ class RealisationsController < ApplicationController
     end
 
     def destroy
-        #@images = ActiveStorage::Blob.find_signed(params[:id])
-        #@images.purge
         @deleteRealisation = Realisation.find(params[:id])
         @deleteRealisation.image.purge
         @deleteRealisation.delete
