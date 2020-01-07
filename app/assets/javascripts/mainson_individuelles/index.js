@@ -1,16 +1,11 @@
-Paloma.controller("Mentions", {
+Paloma.controller("MaisonIndividuelles", {
     index: function() {
       navbar = document.querySelector("nav");
       navLink = document.querySelector(".line-link");
       blockLogoContact = document.querySelector(".blockLogoContact");
       navbarToggler = document.querySelector(".navbar-toggler")
       mediumDevise = window.matchMedia("(max-width: 767px)");
-      cardDescritption = document.querySelectorAll(".card-description");
-      main = document.querySelector(".main");
-  
-  
-      // add flex to the main for this uniq page
-      main.classList.add("main-flex")
+    
   
       // Navbar fluid for resize
       function resizeLowerMd(e) {
@@ -62,15 +57,7 @@ Paloma.controller("Mentions", {
           navbar.classList.add("bg-transparent")
         }
       }
-      navbarToggler.addEventListener("click", navbarCollaspse)
-  
-      // Realisations card maximum length
-      for (i = 0; i < cardDescritption.length; i++){
-        if (cardDescritption[i].textContent.length > 55){
-          cardDescritption[i].classList.add("ellipsis")
-        }
-      }
-      
+      navbarToggler.addEventListener("click", navbarCollaspse)        
     }
-});
+  });
   

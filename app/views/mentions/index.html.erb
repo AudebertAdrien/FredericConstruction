@@ -28,6 +28,37 @@
             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
                     href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </div>
+
+            <div>
+                <% if !admin_signed_in? %>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownAdminLog"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Log
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownAdminLog">
+                        <%= link_to "Connexion", new_admin_session_path, method: :get, class: "dropdown-item" %>
+                        <%= link_to "Créer un compte", new_admin_registration_path, method: :get, class: "dropdown-item" %>
+                    </div>
+                </div>
+                <% end %>
+
+                <% if admin_signed_in? %>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Option
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <%= link_to "Créer une réalisation", new_realisation_path, class: "dropdown-item" %>
+
+                        <%= link_to "Editer un compte", edit_admin_registration_path, method: :get, class: "dropdown-item" %>
+                        <%= link_to "Delete account", admin_registration_path, method: :delete, class: "dropdown-item" %>
+                        <%= link_to "Deconnexion", destroy_admin_session_path, method: :delete, class: "dropdown-item" %>
+                    </div>
+                </div>
+                <% end %>
+            </div>
         </div>
     </div>
 

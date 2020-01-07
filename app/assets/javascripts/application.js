@@ -24,3 +24,4 @@
 //= require couv_zings/index
 //= require carr_faiences/index
 //= require charpentes/index
+//= require mentions/index
