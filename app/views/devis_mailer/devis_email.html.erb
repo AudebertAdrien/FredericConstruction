@@ -1,2 +1,23 @@
 <h1>main email html.erb</h1>
-<%= @params[:inputLastName] %>
+<div>
+    <ul>
+        <li>
+            <%= @params[:inputLastName] %>
+        </li>
+        <li>
+            <%= @params[:inputFirstName] %>
+        </li>
+        <li>
+            <%= @params[:inputEmail] %>
+        </li>
+        <li>
+            <%= @params[:inputPhone] %>
+        </li>
+        <li>
+            <%= @params[:inputTown] %>
+        </li>
+    </ul>
+</div>
+<div>
+    <%= @params[:inputMessage] %>
+</div>
