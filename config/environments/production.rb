@@ -1,6 +1,7 @@
 Rails.application.configure do
 
   #My add
+=begin
   #ActionMailer Gmail
   config.action_mailer.delivery_method = :smtp
   host = 'https://frederic-construction.herokuapp.com/'
@@ -14,7 +15,22 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
+=end
   #/////////
+
+    #ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
+    config.action_mailer.delivery_method = :smtp
+    host = 'https://frederic-construction.herokuapp.com/'
+    config.action_mailer.default_url_options = { host: host }
+  
+    ActionMailer::Base.smtp_settings =   {
+      :address            => 'ses-smtp-adrien.20200113-164223',
+      :port               => 587,
+      :authentication     => :plain,
+      :user_name          => ENV['AMAZON_SES_USERNAME'],
+      :password           => ENV['AMZON_SES_PWD'],
+      :enable_starttls_auto => true
+    }
 
   # Settings specified here will take precedence over those in config/application.rb.
 
