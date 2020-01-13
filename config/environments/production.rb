@@ -24,7 +24,7 @@ Rails.application.configure do
     config.action_mailer.default_url_options = { host: host }
   
     ActionMailer::Base.smtp_settings =   {
-      :address            => 'ses-smtp-adrien.20200113-164223',
+      :address            => ENV['AMAZON_SERVER_NAME'],
       :port               => 587,
       :authentication     => :plain,
       :user_name          => ENV['AMAZON_SES_USERNAME'],
