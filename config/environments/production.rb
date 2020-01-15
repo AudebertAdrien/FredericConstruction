@@ -22,7 +22,7 @@ Rails.application.configure do
 
   #ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
   client = Aws::SES::Client.new(
-    
+    region: ENV['AMAZON_SERVER_NAME']
   )
 
   puts "#" * 100
