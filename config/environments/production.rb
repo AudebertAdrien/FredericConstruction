@@ -21,7 +21,14 @@ Rails.application.configure do
   #/////////
 
   #ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
+  ses = AWS::SimpleEmailService.new(
+    :access_key_id => 'AMAZON_SES_USERNAME',
+    :secret_access_key => 'AMAZON_SES_PWS')
 
+  puts "#" * 100
+  puts ses
+  puts "#" * 100
+  
 
   #/////////
 
