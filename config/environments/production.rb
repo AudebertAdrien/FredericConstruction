@@ -22,7 +22,6 @@ Rails.application.configure do
 
   #ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
 
-  config.action_mailer.delivery_method = :ses
 
   #/////////
 
