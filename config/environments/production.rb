@@ -2,7 +2,6 @@ Rails.application.configure do
 
   #My add
 
-=begin
   #ActionMailer Gmail
   config.action_mailer.delivery_method = :smtp
   host = 'https://frederic-construction.herokuapp.com/'
@@ -16,20 +15,12 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
-=end
+
 
   #/////////
 
   #ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
-  client = Aws::SES::Client.new(
-    SMTP Username: ENV['AMAZON_SMTP_USERNAME'],
-    SMTP Password: ENV['AMAZON_SMTP_PASSWORD']
-    )
 
-  puts "#" * 100
-  puts client
-  puts "#" * 100
-  
 
   #/////////
 
