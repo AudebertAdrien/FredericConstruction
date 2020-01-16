@@ -16,7 +16,6 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
-=end
 
   #/////////
 
@@ -34,8 +33,8 @@ Rails.application.configure do
     authentication: :login,
     enable_starttls_auto: true
   }
+=end
 
-  #/////////
 
   # Settings specified here will take precedence over those in config/application.rb.
 
