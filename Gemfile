@@ -11,8 +11,6 @@ gem 'paloma', '~> 5.1.0'
 
 gem 'dotenv-rails'
 
-gem 'aws-sdk-rails', '~> 3.0', '>= 3.0.5'
-gem 'aws-sdk-ses', '~> 1.27'
 gem 'aws-sdk-s3', '~> 1.60', '>= 1.60.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
