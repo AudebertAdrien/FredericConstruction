@@ -21,11 +21,19 @@ Rails.application.configure do
   #/////////
 
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
+  # SMTP AWS SES
 
   host = 'https://frederic-construction.herokuapp.com/'
   config.action_mailer.default_url_options = { host: host }
 
-
+  ActionMailer::Base.smtp_settings = {
+    address: 'email-smtp.eu-west-1.amazonaws.com',
+    port: 587,
+    user_name: ENV['SES_SMTP_USERNAME'], # Your SMTP user
+    password: ENV['SES_SMTP_PASSWORD'], # Your SMTP password
+    authentication: :login,
+    enable_starttls_auto: true
+  }
 
   #/////////
 
