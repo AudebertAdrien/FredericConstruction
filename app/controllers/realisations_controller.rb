@@ -11,7 +11,7 @@ class RealisationsController < ApplicationController
     end
 
     def create
-        @newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city])
+        @newRealisation = Realisation.new(title: params[:title], description: params[:description], city: params[:city], date: params[:date])
         if params[:image].present?
             @newRealisation.image.attach(params[:image])
         end

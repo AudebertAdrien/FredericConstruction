@@ -1,18 +1,39 @@
-<div class="container">
-    <h3>Redaction de réalisation</h3>
-
+<div class="container ctn-color mt-5 p-3">
+    <h3>Rédaction de réalisation</h3>
     <%= form_with url: realisations_path, class: "d-flex flex-column align-items-center", local: true do |form| %>
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center">
+                <%= label(:title, :Titre) %>
+                <%= form.text_field :title %>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+                <%= label(:city, :Ville) %>
+                <%= form.text_field :city %>
+            </div>
+            <div class="col d-flex flex-column align-items-center">
+                <%= label(:date, :Date) %>
+                <%= form.text_field :date %>
+            </div>
+        </div>
 
-    <%= label(:title, :Titre) %>
-    <%= form.text_field :title %>
+        <div class="row mt-3" style="width: 100%;">
+            <div class="col d-flex flex-column align-items-center">
+                <%= label(:description, :Description) %>
+                <%= form.text_area :description, rows: 10, class: "text-area-size" %>
+            </div>
+        </div>
 
-    <%= label(:description, :Description) %>
-    <%= form.text_area :description %>
-
-    <%= form.file_field :image, multiple: true, id: 1 %>
-    <%= form.file_field :image, multiple: true, id: 2 %>
-    <%= form.file_field :image, multiple: true, id: 3 %>
-
+        <div class="row flex-wrap justify-content-center my-3">
+            <div class="col-md-3">
+                <%= form.file_field :image, multiple: true, id: 1, class: "btn", style: "width: 100%;" %>
+            </div>
+            <div class="col-md-3">
+                <%= form.file_field :image, multiple: true, id: 2, class: "btn", style: "width: 100%;" %>
+            </div>
+            <div class="col-md-3">
+                <%= form.file_field :image, multiple: true, id: 3, class: "btn", style: "width: 100%;" %>
+            </div>
+        </div>
     <%= form.submit %>
     <% end %>
 </div>

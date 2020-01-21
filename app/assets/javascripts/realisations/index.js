@@ -6,8 +6,7 @@ Paloma.controller("Realisations", {
     navbarToggler = document.querySelector(".navbar-toggler")
     mediumDevise = window.matchMedia("(max-width: 767px)");
     cardDescritption = document.querySelectorAll(".card-description");
-    main = document.querySelector(".main");
-
+    main = document.querySelector(".main");    
 
     // add flex to the main for this uniq page
     main.classList.add("main-flex")

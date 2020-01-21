@@ -1,10 +1,12 @@
-<div class="container">
+<div class="container ctn-color p-3">
 
-    <h3><%= @realisation.title %></h3>
+    <h1><%= @realisation.title %></h1>
+    <p>Réaliser à <%= @realisation.city %></p>
+    <p>le <%= @realisation.date %></p>
     <p><%= @realisation.description %></p>
 
     <% if @realisation.image.attached? %>
-        <div class="container d-flex flex-wrap justify-content-center">
+        <div class="container d-flex flex-wrap justify-content-center ctn-pictures-color">
         <% @realisation.image.each do |image| %>
             <div class="card m-4" style="width: 18rem;">
                 <%= image_tag(image, alt: "image de chantier", class: "card-img-top image-fit") %>

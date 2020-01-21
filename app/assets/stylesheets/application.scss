@@ -59,6 +59,10 @@ a{
   font-weight: 600;
 }
 
+.text-area-size{
+  width: 100%;
+}
+
 .main{
   min-height: 90vh;
 }
@@ -68,6 +72,14 @@ a{
   align-items: center;
 }
 
+// Container 
+.ctn-color{
+  background-color: #F6F5F5;
+}
+
+.ctn-pictures-color{
+  background-color: #FFF;
+}
 
 // Navbar
 .navbar-logo {
@@ -120,13 +132,6 @@ a{
     background-color: #E23A0F;
   }
 
-// Comments Section
-.ctn-comments{
-  background-color: #F6F5F5;
-}
-  .comment{
-    background-color: #FFF;
-  }
 
 .ctn-comments blockquote::before{
   content: "❝";
