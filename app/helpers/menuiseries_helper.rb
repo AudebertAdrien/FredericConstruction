@@ -1,0 +1,2 @@
+module MenuiseriesHelper
+end

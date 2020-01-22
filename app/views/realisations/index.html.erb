@@ -1,24 +1,33 @@
-<div class="container d-flex flex-wrap justify-content-center">
-    <% @realisations.each do |realisation| %>
-    <div class="card m-4" style="width: 18rem;">
-        <% if realisation.image.attached? %>
-            <%= image_tag(realisation.image.first, alt: realisation.title, class: "card-img-top image-fit") %>
+<div class="container d-flex flex-column align-items-center">
+    <div class="row my-5">
+        <% if admin_signed_in? %>
+        <%= link_to "Créer une réalisation", new_realisation_path, class: "btn" %>
         <% end %>
-        <div class="card-body d-flex flex-column">
-            <h5 class="card-title"><%= realisation.title %></h5>
-            <div class="d-flex justify-content-between">
-                <p><%= realisation.city %></p>
-                <p><%= realisation.date %></p>
-            </div>
-            
-            <p class="card-text card-description"><%= realisation.description %></p>
-            <div>
-                <%= link_to "Detail", realisation_path(realisation) %>
-                <% if admin_signed_in? %>
-                <%= link_to "Supprimer", realisation_path(realisation), method: :delete, data: {confirm: "Confirmer pour la supression"} %>
-                <% end %>
+    </div>
+
+    <div class="row flex-wrap justify-content-center">
+        <% @realisations.each do |realisation| %>
+        <div class="card m-4" style="width: 18rem;">
+            <% if realisation.image.attached? %>
+            <%= image_tag(realisation.image.first, alt: realisation.title, class: "card-img-top image-fit") %>
+            <% end %>
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title"><%= realisation.title %></h5>
+                <div class="d-flex justify-content-between">
+                    <p><%= realisation.city %></p>
+                    <p><%= realisation.date %></p>
+                </div>
+
+                <p class="card-text card-description"><%= realisation.description %></p>
+                <div>
+                    <%= link_to "Detail", realisation_path(realisation) %>
+                    <% if admin_signed_in? %>
+                    <%= link_to "Supprimer", realisation_path(realisation), method: :delete, data: {confirm: "Confirmer pour la supression"} %>
+                    <% end %>
+                </div>
             </div>
         </div>
+        <% end %>
     </div>
-    <% end %>
+
 </div>
