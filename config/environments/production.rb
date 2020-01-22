@@ -23,7 +23,7 @@ Rails.application.configure do
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
   # SMTP AWS SES
   config.action_mailer.delivery_method = :smtp
-  host = 'https://frederic-construction.herokuapp.com/'
+  host = 'adrien-audebert.fr'
   config.action_mailer.default_url_options = { host: host }
 
   ActionMailer::Base.smtp_settings = {
