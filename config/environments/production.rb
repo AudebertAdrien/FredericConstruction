@@ -17,7 +17,7 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
-=end
+  
   #/////////
 
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
@@ -33,7 +33,7 @@ Rails.application.configure do
     password: ENV['SES_SMTP_PASSWORD'], # Your SMTP password
     enable_starttls_auto: true
   }
-
+=end
 
 
   # Settings specified here will take precedence over those in config/application.rb.
