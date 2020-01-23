@@ -34,7 +34,6 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
 =end
-config.action_mailer.delivery_method = :ses
 
 
   # Settings specified here will take precedence over those in config/application.rb.
