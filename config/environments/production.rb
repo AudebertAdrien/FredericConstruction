@@ -1,7 +1,7 @@
 Rails.application.configure do
 
   # My add
-
+  config.force_ssl = true
 
   # ActionMailer Gmail
 
@@ -23,7 +23,7 @@ Rails.application.configure do
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
   # SMTP AWS SES
   config.action_mailer.delivery_method = :smtp
-  host = 'adrien-audebert.fr'
+  host = 'email-smtp.us-east-1.amazonaws.com'
   config.action_mailer.default_url_options = { host: host }
 
   ActionMailer::Base.smtp_settings = {
