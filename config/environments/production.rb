@@ -2,7 +2,7 @@ Rails.application.configure do
 
   # My add
 
-=begin
+
   # ActionMailer Gmail
 
   config.action_mailer.delivery_method = :smtp
@@ -17,7 +17,7 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
-
+=begin
   #/////////
 
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
