@@ -17,7 +17,7 @@ Rails.application.configure do
     :password           => ENV['GMAIL_PWD'],
     :enable_starttls_auto => true
   }
-  
+
   #/////////
 
   # ActionMailer amazon SES sandbox : 200 mails per 24h and 1 mail per second
@@ -34,7 +34,11 @@ Rails.application.configure do
     enable_starttls_auto: true
   }
 =end
+config.action_mailer.delivery_method = :ses
 
+ActionMailer::Base.add_delivery_method :ses, AWS::SES::Base,
+  access_key_id: ENV['AMAZON_ACCESS_KEY'],
+  secret_access_key: ENV['AMAZON_SECRET_KEY']
 
   # Settings specified here will take precedence over those in config/application.rb.
 
