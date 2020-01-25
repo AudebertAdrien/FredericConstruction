@@ -12,11 +12,11 @@
 
     <div class="d-flex justify-content-center align-items-center">
 
-        <%= form_with url: contacts_path, class: "vw-100" do %>
+        <%= form_with url: contacts_path, class: "vw-100", local: true do %>
         <div class="form-row">
             <div class="form_group col-md-6">
                 <%= label_tag(:inputLastName, "Nom") %>
-                <%= text_field_tag(:inputLastName, "", class: "form-control", placeholder: "Ex: Launey") %>
+                <%= text_field_tag(:inputLastName, "", class: "form-control", placeholder: "Ex: Launey", required: true) %>
             </div>
             <div class="form_group col-md-6">
                 <%= label_tag(:inputFirstName , "Prenom") %>
@@ -26,17 +26,17 @@
         <div class="form-row">
             <div class="form_group col-md-6">
                 <%= label_tag(:inputEmail, "Email*") %>
-                <%= email_field_tag(:inputEmail, "", class: "form-control", placeholder: "Ex: FrancoisLauney@gmail.com") %>
+                <%= email_field_tag(:inputEmail, "", class: "form-control", placeholder: "Ex: FrancoisLauney@gmail.com", required: true) %>
             </div>
             <div class="form_group col-md-6">
                 <%= label_tag(:inputPhone, "Tel*") %>
-                <%= text_field_tag(:inputPhone, "", class: "form-control", placeholder: "Ex: 01.02.03.04.05") %>
+                <%= text_field_tag(:inputPhone, "", class: "form-control", placeholder: "Ex: 01.02.03.04.05", required: true) %>
             </div>
         </div>
         <div class="form-row">
             <div class="form_group col-md-6">
                 <%= label_tag(:inputTown, "Ville*") %>
-                <%= text_field_tag(:inputTown, "", class: "form-control", placeholder: "Ex: Périgueux") %>
+                <%= text_field_tag(:inputTown, "", class: "form-control", placeholder: "Ex: Périgueux", required: true) %>
             </div>
         </div>
         <div class="form-row">
