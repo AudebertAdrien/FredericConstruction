@@ -17,6 +17,7 @@ class RealisationsController < ApplicationController
         end
 
         @newRealisation.save
+        flash[:success] = "Réalisation créer"
         redirect_to realisation_path(@newRealisation.id)
     end
 
@@ -24,6 +25,7 @@ class RealisationsController < ApplicationController
         @deleteRealisation = Realisation.find(params[:id])
         @deleteRealisation.image.purge
         @deleteRealisation.delete
+        flash[:alert] = "Réalisation supprimer"
         redirect_to realisations_path
     end
 end

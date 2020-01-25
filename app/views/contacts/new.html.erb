@@ -11,7 +11,8 @@
     <small>Ce formulaire nous enverra un email</small>
 
     <div class="d-flex justify-content-center align-items-center">
-        <%= form_with(class: "vw-100") do %>
+
+        <%= form_with url: contacts_path, class: "vw-100" do %>
         <div class="form-row">
             <div class="form_group col-md-6">
                 <%= label_tag(:inputLastName, "Nom") %>
@@ -54,6 +55,7 @@ Ex: Je souhaiterez connaître vos tarif concernant..." ) %>
             </div>
         </div>
         <% end %>
+
     </div>
 </div>
 

@@ -1,9 +1,11 @@
 class ContactsController < ApplicationController
-    def index
+
+    def new
     end
 
     def create
         DevisMailer.with(@params = params).devis_email.deliver_now
-        redirect_to root_path
+        flash.now[:success] = "test"
+        redirect_to new_contact_path
     end
 end
