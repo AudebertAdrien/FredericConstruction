@@ -1,4 +1,7 @@
-<div class="container d-flex flex-column align-items-center">
+<div class="container d-flex flex-column align-items-center p-5">
+    <div class="mt-4">
+        <h2 class="underline">TOUTES NOS REALSITIONS</h2>
+    </div>
     <div class="row my-5">
         <% if admin_signed_in? %>
         <%= link_to "Créer une réalisation", new_realisation_path, class: "btn" %>
