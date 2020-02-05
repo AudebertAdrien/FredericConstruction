@@ -4,11 +4,10 @@ Paloma.controller("Homes", {
     navLink = document.querySelector(".line-link");
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
-    mediumDevise = window.matchMedia("(max-width: 767px)");
+    mediumDevise = window.matchMedia("(max-width: 991px)");
     cardDescritption = document.querySelectorAll(".card-description");
 
   
-
     // Navbar fluid for resize
     function resizeLowerMd(e) {
       if (e.matches) {
@@ -61,7 +60,7 @@ Paloma.controller("Homes", {
     }
     navbarToggler.addEventListener("click", navbarCollaspse)
     
-    // Realisations card maximum length
+    // Realisations card maximum length character
     for (i = 0; i < cardDescritption.length; i++){
       if (cardDescritption[i].textContent.length > 55){
         cardDescritption[i].classList.add("ellipsis")

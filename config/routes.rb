@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :homes, only: [:index]
   resources :maconneries, only: [:index]
   resources :charpentes, only: [:index]
-  resources :menuiseries, only: [:index]
   resources :couv_zings, only: [:index]
   resources :carr_faiences, only: [:index]
   resources :mentions, only: [:index]

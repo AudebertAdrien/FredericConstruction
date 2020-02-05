@@ -4,7 +4,7 @@ Paloma.controller("Maconneries", {
     navLink = document.querySelector(".line-link");
     blockLogoContact = document.querySelector(".blockLogoContact");
     navbarToggler = document.querySelector(".navbar-toggler")
-    mediumDevise = window.matchMedia("(max-width: 768px)");
+    mediumDevise = window.matchMedia("(max-width: 991px)");
 
     // Navbar fluid for resize
     function resizeLowerMd(e) {

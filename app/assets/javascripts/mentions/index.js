@@ -4,7 +4,7 @@ Paloma.controller("Mentions", {
       navLink = document.querySelector(".line-link");
       blockLogoContact = document.querySelector(".blockLogoContact");
       navbarToggler = document.querySelector(".navbar-toggler")
-      mediumDevise = window.matchMedia("(max-width: 767px)");
+      mediumDevise = window.matchMedia("(max-width: 991px)");
       cardDescritption = document.querySelectorAll(".card-description");
       main = document.querySelector(".main");
   
