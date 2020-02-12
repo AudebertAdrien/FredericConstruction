@@ -1,5 +1,5 @@
 Paloma.controller("Contacts", {
-  index: function() {
+  new: function() {
     
     navbar = document.querySelector("nav");
     navLink = document.querySelector(".line-link");
