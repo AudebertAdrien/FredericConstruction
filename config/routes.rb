@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   resources :couv_zings, only: [:index]
   resources :carr_faiences, only: [:index]
   resources :mentions, only: [:index]
-  resources :maison_individuelles, only: [:index]
   resources :realisations
 
   resources :contacts, only: [:new, :create]
