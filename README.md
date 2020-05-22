@@ -3,7 +3,8 @@
 > Website realised by Audebert Adrien
 
 ## Link in production
-[Heroku link](https://frederic-construction.herokuapp.com/)
+[Heroku link](https://construction-web-site.herokuapp.com/)
+[Personal website](http://www.adrien-audebert.fr/)
 
 ## Specificity
 - `Ruby on Rails`
