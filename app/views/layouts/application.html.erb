@@ -20,9 +20,11 @@
   <body>
         <%= render 'layouts/navbar' %>
         <%= render 'layouts/flash' %>
+
         <div class="main">
         <%= yield %>
         </div>
+        
         <%= render 'layouts/footer' %> 
         <%= insert_paloma_hook %>  
   </body>
