@@ -1,7 +1,7 @@
 Rails.application.configure do
 
   # My add
-  config.force_ssl = true
+  #config.force_ssl = true
 
   # ActionMailer Gmail
 =begin
