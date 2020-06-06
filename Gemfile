@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.7.1'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 
@@ -9,9 +9,16 @@ gem 'table_print'
 
 gem 'paloma', '~> 5.1.0'
 
-gem 'dotenv-rails'
+#gem 'dotenv-rails'
 
 gem 'aws-sdk-s3', '~> 1.60', '>= 1.60.1'
+
+# Upgrade for fix security vunerability
+
+gem "activesupport", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
+gem "activestorage", ">= 5.2.4.3" 
+gem "actionview", ">= 5.2.4.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
@@ -76,4 +83,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
