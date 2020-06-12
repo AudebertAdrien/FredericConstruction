@@ -1,21 +1,21 @@
 # construction-web-site
 
 > Website realised by Audebert Adrien
+> Not anymore in production
 
-## Link in production
-<!-- [Heroku link](https://construction-web-site.herokuapp.com/)
-[Personal website](http://www.adrien-audebert.fr/) -->
+## Execut
+> ruby 2.5.1
+> rails 5.2.5.3
 
 ## Specificity
 - `Ruby on Rails`
 - `HTML - CSS - JAVASCRIPT`
 - `Bootstrap`
-- `Database for "article create (e.g. construction site)"`
-  - `PostgreSQL`
-- `Heroku cloud PaaS`
+- `Database: PostgreSQL`
+- `Cloud PaaS: Heroku`
 - `AWS`
   - `S3`
   - `Domain name`
   - `DNS Route53`
-- `Use Google email for "Contact page"`
-- `Devise for "admin account"`
+- `Use Google email SMTP`
+- `Devise`
