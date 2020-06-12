@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Admin delete"
+puts "Realisation delete"
+
+Admin.delete_all
+Realisation.delete_all
+
+Admin.create(email: "test@test.com", password: "azerty")
+
+3.times do |i|
+    Realisation.create(title: Faker::Construction.subcontract_category  , description: Faker::Lorem.sentence , city: Faker::Address.city, date: Faker::Date.in_date_period(month: 2))
+end

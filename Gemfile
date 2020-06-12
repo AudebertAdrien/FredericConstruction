@@ -4,12 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 
-gem 'table_print'
 gem 'paloma', '~> 5.1.0'
-
-#gem 'dotenv-rails'
-
 gem 'aws-sdk-s3', '~> 1.60', '>= 1.60.1'
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 # Upgrade for fix security vunerability
 
@@ -57,6 +54,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 
+  # Add Gem
+  gem 'table_print'
   gem 'dotenv-rails'
 end
 
