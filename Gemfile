@@ -6,7 +6,6 @@ gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
 
 gem 'table_print'
-
 gem 'paloma', '~> 5.1.0'
 
 #gem 'dotenv-rails'
