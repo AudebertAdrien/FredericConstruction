@@ -1,5 +1,6 @@
 {
   "name": "ConstructionWebSite",
-  "private": true,
-  "dependencies": {}
+  "version": "1.0",
+  "description": "",
+  "private": true
 }
