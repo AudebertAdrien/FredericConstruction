@@ -1,9 +1,9 @@
 # construction-web-site
 
-> Website realised by Audebert Adrien
+> Website realised by Adrien Audebert
 > Not anymore in production
 
-## Execut
+## Version
 > ruby 2.5.1
 > rails 5.2.5.3
 
